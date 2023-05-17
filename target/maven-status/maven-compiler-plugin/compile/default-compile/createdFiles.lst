@@ -1,0 +1,9 @@
+ru/schung/project/models/Person.class
+ru/schung/project/dao/PersonDAO.class
+ru/schung/project/util/PersonValidator.class
+ru/schung/project/config/SpringConfig.class
+ru/schung/project/controllers/BookController.class
+ru/schung/project/dao/BookDAO.class
+ru/schung/project/models/Book.class
+ru/schung/project/config/MySpringMVCDispatcherServletInitializer.class
+ru/schung/project/controllers/PersonController.class

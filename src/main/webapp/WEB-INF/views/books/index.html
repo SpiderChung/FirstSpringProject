@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a>Тут должны быть книги</a>
+
+<div th:each="book : ${books}">
+    <a th:href="@{/books/{id}(id=${book.getId()})}"
+       th:text="${book.getBookId() + ',   ' + book.getName() + ',    ' +
+        book.getAuthor() + ',    ' + book.getReleaseYear()}">book</a>
+</div>
+<br/>
+
+<a href="/books/new">Добавить новую книгу</a>
+
+</body>
+</html>
