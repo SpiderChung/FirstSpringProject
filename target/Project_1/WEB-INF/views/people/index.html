@@ -9,18 +9,6 @@
 <div th:each="person : ${people}">
     <a th:href="@{/people/{id}(id=${person.getPersonId()})}"
        th:text="${person.getPersonId() + ',   ' + person.getName() + ',   ' + person.getBirthYear()}">person</a>
-    <BLOCKQUOTE>
-    <form th:method="PATCH" th:action="@{books/{id}/add(id = ${person.getPersonId()})}">
-        <label for="book">Выберите книгу</label>
-        <select th:object="${book}" th:field="*{id}" id="book">
-            <option th:each="book : ${books}"
-                    th:value="${book.getBookId()}"
-                    th:text="${book.getName()}">
-            </option>
-        </select>
-        <input type="submit" value="Присвоить">
-    </form>
-    </BLOCKQUOTE>
     </br>
 
 </div>
